@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.iii.homework2.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="選取餐點"
+                android:textSize="30dp"/>
+            <EditText
+                android:id="@+id/lblMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="顯示餐點"
+                android:textSize="30dp"
+                android:layout_marginLeft="50dp"
+                android:enabled="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="輸入數量"
+                android:textSize="30dp"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:id="@+id/lblNumber"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginLeft="60dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="總共金額"
+                android:textSize="30dp"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:id="@+id/lblSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="顯示金額"
+                android:textSize="30dp"
+                android:layout_marginLeft="60dp"
+                android:enabled="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="退返金額"
+                android:textSize="30dp"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:id="@+id/lblReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退返金額"
+                android:textSize="30dp"
+                android:layout_marginLeft="60dp"
+                android:enabled="false"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
